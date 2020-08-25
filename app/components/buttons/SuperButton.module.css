@@ -1,0 +1,13 @@
+.container {
+  color: white;
+  border: 5px dotted black;
+  padding: 10px;
+}
+
+.error {
+  background-color: red;
+}
+
+.okay {
+  background-color: green
+}

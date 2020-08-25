@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./app/components:/app/components
+      - ./app/templates:/app/templates
+      - ./app/pages:/app/pages
+      - ./app/public:/app/public
+      - ./app/entrypoint.sh:/app/entrypoint.sh
+      - ./app/next.config.js:/app/next.config.js
+    command:
+      - dev
+    ports:
+      - 3000:3000
+  export:
+    build:
+      context: .
+      dockerfile: Dockerfile.export
+    command:
+      - export
+    volumes:
+      - ./app/out:/app/out
+    ports:
+      - 4000:4000
