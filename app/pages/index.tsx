@@ -9,17 +9,17 @@ export default function () {
       <h2>Pages</h2>
       <ul>
         <li>
-          <Link href="/another" color="secondary">
+          <Link href="/another">
             /another
           </Link>
         </li>
         <li>
-          <Link href="/dashboard" color="secondary">
+          <Link href="/dashboard">
             /dashboard
           </Link>
         </li>
         <li>
-          <Link href="/healthz" color="secondary">
+          <Link href="/healthz">
             /healthz
           </Link>
         </li>
